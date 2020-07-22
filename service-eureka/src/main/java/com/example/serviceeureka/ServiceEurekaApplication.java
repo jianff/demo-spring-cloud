@@ -12,4 +12,8 @@ public class ServiceEurekaApplication {
         SpringApplication.run(ServiceEurekaApplication.class, args);
     }
 
+    //add some test
+    private void get() {
+
+    }
 }

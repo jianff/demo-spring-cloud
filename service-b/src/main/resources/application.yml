@@ -1,9 +1,9 @@
 server:
-  port: 8092
+  port: 8083
 
 spring:
   application:
-    name: service-dream-a
+    name: service-dream-b
 
 eureka:
   client:
@@ -14,3 +14,7 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+ribbon:
+  ConnectTimeout: 5000
+  ReadTimeout: 5000

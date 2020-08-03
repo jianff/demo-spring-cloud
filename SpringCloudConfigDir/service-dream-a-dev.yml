@@ -1,20 +1,2 @@
-server:
-  port: 8010
-
-spring:
-  application:
-    name: service-dream-a
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8081/eureka
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
-
-ribbon:
-  ConnectTimeout: 5000
-  ReadTimeout: 5000
+name: zhangjianfeng
+id: 123456789
